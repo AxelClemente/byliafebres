@@ -1,12 +1,15 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
+// import HomePageText from "@/assets/HomePageText.png";
+import HomePageText from "@/assets/liatest1.svg";
 // import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import HomePageGraphic from "@/assets/Academy3.svg";
-import SponsorRedBull from "@/assets/SponsorRedBull.png";
-import SponsorForbes from "@/assets/SponsorForbes.png";
-import SponsorFortune from "@/assets/SponsorFortune.png";
+import SponsorRedBull from "@/assets/bodas.svg";
+import SponsorForbes from "@/assets/primor1.svg";
+import SponsorFortune from "@/assets/caudali.svg";
+import SponsorBobbie from "@/assets/bobbie1.svg";
+import SponsorW7 from "@/assets/w7.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -89,10 +92,12 @@ const Home = ({ setSelectedPage }: Props) => {
       {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
-            <div className="flex w-3/5 items-center justify-between gap-8">
-              <img alt="redbull-sponsor" src={SponsorRedBull} />
+            <div className="flex  items-center justify-between gap-8">
+              <img alt="fortune-sponsor" src={SponsorW7} />
+              <img alt="redbull-sponsor" src={SponsorRedBull} />            
               <img alt="forbes-sponsor" src={SponsorForbes} />
-              <img alt="fortune-sponsor" src={SponsorFortune} />
+              <img alt="fortune-sponsor" src={SponsorFortune} />                          
+              <img alt="fortune-sponsor" src={SponsorBobbie} />
             </div>
           </div>
         </div>
