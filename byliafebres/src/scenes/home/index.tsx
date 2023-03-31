@@ -2,7 +2,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 // import HomePageText from "@/assets/HomePageText.png";
-import HomePageText from "@/assets/liatest1.svg";
+import HomePageText from "@/assets/liatest4.svg";
 // import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import HomePageGraphic from "@/assets/Academy3.svg";
 import SponsorRedBull from "@/assets/bodas.svg";
@@ -48,9 +48,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+                ¡Hola! Mi nombre es Lía. Soy maquilladora y me especializo en servicios de novias y formaciones de maquillaje.Te invito a que conozcas más sobre mi trabajo y formaciones de maquillaje. Me encantará formar parte de tu proceso.
             </p>
           </motion.div>
 
