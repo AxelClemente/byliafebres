@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import ContactUsPageGraphic from "@/assets/contact.svg";
+import ContactUsPageGraphic from "@/assets/bridal2.svg";
 import HText from "@/shared/HText";
 
 type Props = {
@@ -43,7 +43,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">¿Alguna duda?</span> Contactame
+            <span style={{fontFamily: "Dancing Script, cursive"}} className="text-primary-500">¿Alguna duda?</span> <span style={{fontFamily: "Dancing Script, cursive"}}>Contactame </span> 
           </HText>
           <p className="my-5">
             Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl

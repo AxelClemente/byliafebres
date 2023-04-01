@@ -68,7 +68,11 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-3/5">
-            <HText>Formaciónes Online</HText>
+            <HText> 
+                <span style={{fontFamily: "Dancing Script, cursive"}} >
+                    Academia 
+                </span> <span className="text-primary-500" style={{fontFamily: "Dancing Script, cursive"}}>Online</span>
+            </HText>
             <p className="py-5">
               Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
               tellus quam porttitor. Mauris velit euismod elementum arcu neque

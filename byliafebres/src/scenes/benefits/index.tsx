@@ -1,36 +1,36 @@
 import ActionButton from "@/shared/ActionButton";
 import HText from "@/shared/HText";
 import { BenefitType, SelectedPage } from "@/shared/types";
-import {
-  HomeModernIcon,
-  UserGroupIcon,
-  AcademicCapIcon,
-} from "@heroicons/react/24/solid";
+// import {
+//   HomeModernIcon,
+//   UserGroupIcon,
+//   AcademicCapIcon,
+// } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/bridal.svg";
 import Benefit from "./Benefit";
 
-const benefits: Array<BenefitType> = [
-  {
+// const benefits: Array<BenefitType> = [
+//   {
     
-    icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities",
-    description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
-  },
-  {
-    icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes",
-    description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
-  },
-  {
-    icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers",
-    description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
-  },
-];
+//     icon: <HomeModernIcon className="h-6 w-6" />,
+//     title: "State of the Art Facilities",
+//     description:
+//       "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+//   },
+//   {
+//     icon: <UserGroupIcon className="h-6 w-6" />,
+//     title: "100's of Diverse Classes",
+//     description:
+//       "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+//   },
+//   {
+//     icon: <AcademicCapIcon className="h-6 w-6" />,
+//     title: "Expert and Pro Trainers",
+//     description:
+//       "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+//   },
+// ];
 
 const container = {
   hidden: {},
@@ -45,7 +45,7 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="benefits" className="mx-auto  w-5/6 py-200">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
@@ -61,16 +61,12 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>MORE THAN JUST GYM.</HText>
-          <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
-          </p>
+          
+
         </motion.div>
 
         {/* BENEFITS */}
-        <motion.div
+        {/* <motion.div
           className="mt-5 items-center justify-between gap-8 md:flex"
           initial="hidden"
           whileInView="visible"
@@ -86,7 +82,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             />
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* GRAPHICS AND DESCRIPTION */}
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
@@ -113,8 +109,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                  Maquillaje y peinado para novias en {" "}
-                    <span className="text-primary-500">Mallorca</span>
+                  <span style={{ fontFamily: "Dancing Script, cursive" }}>
+                    Maquillaje y peinado para novias en
+                  </span>{" "}
+                    <span style={{ fontFamily: "Dancing Script, cursive" }} className="text-primary-500">Mallorca</span>
                   </HText>
                 </motion.div>
               </div>
@@ -147,7 +145,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             </motion.div>
 
             {/* BUTTON */}
-            <div className="relative mt-16">
+            <div className="relative mt-16 ">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
                   Contacto

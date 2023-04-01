@@ -27,7 +27,10 @@ module.exports = {
       }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"]
+        montserrat: ["Montserrat", "sans-serif"],
+        dancing: ["Dancing Script", "cursive"],
+
+
       },
       content: {
         evolvetext: "url('./assets/by1.svg')",
