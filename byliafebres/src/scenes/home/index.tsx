@@ -2,9 +2,9 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 // import HomePageText from "@/assets/HomePageText.png";
-import HomePageText from "@/assets/liatest4.svg";
+import HomePageText from "@/assets/liatest5.svg";
 // import HomePageGraphic from "@/assets/HomePageGraphic.png";
-import HomePageGraphic from "@/assets/Academy3.svg";
+import HomePageGraphic from "@/assets/Academy5.svg";
 import SponsorRedBull from "@/assets/bodas.svg";
 import SponsorForbes from "@/assets/primor1.svg";
 import SponsorFortune from "@/assets/caudali.svg";
@@ -21,7 +21,7 @@ const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="home" className="gap-16 bg-white-20 py-10 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
